@@ -1,0 +1,9 @@
+---
+- hosts: 10.142.0.11
+  tasks:
+  - name: Set-up java
+    yum:
+      name: java
+      state: latest
+    become: true
+...
